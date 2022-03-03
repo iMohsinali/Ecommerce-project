@@ -11,6 +11,7 @@ const data ={
             rating:1,
             rewives:10,
             descrpition:'high quality'
+            ,countInstack:5
 
 
         },
@@ -24,6 +25,7 @@ const data ={
             rating:3.5,
             rewives:20,
             descrpition:'high quality'
+            ,countInstack:0
 
 
         },
@@ -37,6 +39,7 @@ const data ={
             rating:4,
             rewives:15,
             descrpition:'high quality'
+            ,countInstack:1
 
 
         },
@@ -50,6 +53,7 @@ const data ={
             rating:5,
             rewives:100,
             descrpition:'high quality'
+            ,countInstack:2
 
 
         },
@@ -63,6 +67,7 @@ const data ={
             rating:3,
             rewives:5,
             descrpition:'high quality'
+            ,countInstack:3
 
 
         },
@@ -76,6 +81,7 @@ const data ={
             rating:4.5,
             rewives:10,
             descrpition:'high quality'
+            ,countInstack:0
 
 
         }
