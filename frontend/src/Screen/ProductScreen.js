@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Rating from '../components/Rating'
 
-import data from '../data'
+
 
 const ProductScreen = (props) => {
     console.log("this ",props)
-    const product=data.product.find((x)=>x._id==='2')
+    const product=product.find((x)=>x._id==='2')
   return (
     <div className='row top'>
         <Link to="/" > Back to the result</Link>
