@@ -6,12 +6,12 @@ import Rating from '../components/Rating'
 
 const ProductScreen = (props) => {
     console.log("this ",props)
-    const product=product.find((x)=>x._id==='2')
+    const product=props.find((x)=>x._id==='2')
   return (
     <div className='row top'>
         <Link to="/" > Back to the result</Link>
      <div className='col-2'>
-         <img  className='large' src= {product.image}/>
+         <img  className='large' src= {product.image} alt={product.name}/>
      </div>
      <div className='col-1'>
          <ul>
