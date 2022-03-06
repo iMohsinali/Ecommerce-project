@@ -1,5 +1,4 @@
 import React from 'react'
-import ProductScreen from '../Screen/ProductScreen'
 import Rating from './Rating'
 const Product = ({product}) => {
     return (
