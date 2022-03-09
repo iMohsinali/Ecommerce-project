@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { detailsproduct } from '../Action/ProductAction'
 import Loading from '../components/Loading'
 import MessageBox from '../components/MessageBox'
@@ -8,11 +8,13 @@ import Rating from '../components/Rating'
 
 
 
-const ProductScreen = (props) => {
+const ProductScreen = () => {
+    const params=useParams()
+    
     const productDetails=useSelector(state=>state.productDetails)
     const {loading,error,product}=productDetails
 const dispatch=useDispatch()
-const productid=props.match.params.id
+const productid=params.id
     useEffect(() => {
                 dispatch(  detailsproduct(productid))
     }, [dispatch,productid]);
