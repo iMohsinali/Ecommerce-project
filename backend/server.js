@@ -3,22 +3,18 @@ import data from "./data.js";
 
 const app=express()
 
-app.get('/api/product/:id',(req,res)=>{
-    const product=data.product((x)=>x._id===req.params.id)
-    if(product)
-    {
-        console.log(product)
-        res.send(product)
-
+app.get('/api/product/:id', (req, res) => {
+    const product = data.product.find((x) => x._id === req.params.id);
+    if (product) {
+      res.send(product);
+    } else {
+      res.status(404).send({ message: 'Product Not Found' });
     }
-    else{
-        res.status(404).send({message:'product not found'})
-    }
-
-})
+  });
 
 app.get('/api/product',(req,res)=>{
     res.send(data.product)
+    console.log(data.product)
 
 })
 app.get('/',(req,res)=>{
