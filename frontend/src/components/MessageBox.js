@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const MessageBox = (props) => {
   return (
-    <div className={`alert alert-${props.variant || 'info'}`}>
-        {props.children}
-        </div>
-  )
-}
+    <div className={`alert alert-${props.variant || "info"}`}>
+      {props.children}
+    </div>
+  );
+};
 
-export default MessageBox
+export default MessageBox;

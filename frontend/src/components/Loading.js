@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Loading = () => {
   return (
     <div>
-        <i className='fa fa-spinner fa-spin'></i>
-        Loading....
+      <i className="fa fa-spinner fa-spin"></i>
+      Loading....
     </div>
-  )
-}
+  );
+};
 
-export default Loading
+export default Loading;
