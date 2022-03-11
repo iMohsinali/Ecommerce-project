@@ -21,7 +21,7 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="/cart/:id?" element={<CartScreen />} />
+            <Route path="/cart/:id" element={<CartScreen />} />
             <Route path="/product/:id" element={<ProductScreen />}></Route>
             <Route path="/" element={<HomeScreem />}>
               {" "}

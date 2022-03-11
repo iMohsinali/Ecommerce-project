@@ -19,7 +19,7 @@ const ProductScreen = (props) => {
   }, [dispatch, productid]);
 
   const addtoCartHandler = () => {
-    navigate(`/cart/${productid}?qty={qty}`);
+    navigate(`/cart/${productid}?qty=${qty}`);
   };
   return (
     <div>
