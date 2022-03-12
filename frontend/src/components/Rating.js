@@ -2,7 +2,7 @@ import React from "react";
 
 const Rating = ({ rating, rewives }) => {
   return (
-    <div class="rating">
+    <div className="rating">
       <span>
         <i
           className={

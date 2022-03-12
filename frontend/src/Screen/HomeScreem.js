@@ -23,7 +23,7 @@ const HomeScreem = () => {
       ) : (
         <div className=" row center">
           {product.map((product) => (
-            <Product product={product} />
+            <Product key={product._id} product={product} />
           ))}
         </div>
       )}
